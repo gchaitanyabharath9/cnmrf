@@ -1,0 +1,72 @@
+# CNMRF Vendor-Neutral Configuration
+# This values file externalizes vendor specifics to allow portability.
+
+# -----------------------------------------------------------------------------
+# PLATFORM ABSTRACTION (The core of neutrality)
+# -----------------------------------------------------------------------------
+platform:
+  # provider: aws | azure | gcp | onprem
+  provider: aws
+  
+  # ingressController: alb | nginx | appgw | gce
+  ingressController: alb
+  
+  # secretStore: vault | aws-secrets-manager | azure-keyvault | k8s-secret
+  secretStore: aws-secrets-manager
+
+# -----------------------------------------------------------------------------
+# APPLICATION CONFIG
+# -----------------------------------------------------------------------------
+replicaCount: 2
+
+image:
+  repository: myrepo/myservice
+  pullPolicy: IfNotPresent
+  tag: ""
+
+serviceAccount:
+  create: true
+  name: ""
+  annotations: {} 
+  # Note: logic in _helpers will auto-inject IRSA (AWS) or Workload Identity (Azure) based on 'platform.provider'
+
+podAnnotations: {}
+
+service:
+  type: ClusterIP
+  port: 80
+  targetPort: 8080
+
+ingress:
+  enabled: true
+  className: "" # overridden by platform logic if empty
+  host: "api.example.com"
+  path: "/"
+  tls: []
+
+resources:
+  limits:
+    cpu: 500m
+    memory: 512Mi
+  requests:
+    cpu: 100m
+    memory: 256Mi
+
+autoscaling:
+  enabled: true
+  minReplicas: 2
+  maxReplicas: 10
+  targetCPUUtilizationPercentage: 80
+
+# -----------------------------------------------------------------------------
+# APP SETTINGS (Externalized config)
+# -----------------------------------------------------------------------------
+env:
+  SPRING_PROFILES_ACTIVE: "prod"
+  # DOTNET_ENVIRONMENT: "Production"
+
+# List of secrets to fetch from the external store
+externalSecrets: []
+# - name: DB_PASSWORD
+#   key: rds-credential
+#   property: password

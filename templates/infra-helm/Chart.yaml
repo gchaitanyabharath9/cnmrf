@@ -1,0 +1,9 @@
+apiVersion: v2
+name: cnmrf-service
+description: Vendor-neutral Helm chart for CNMRF microservices (Spring Boot / .NET)
+type: application
+version: 1.0.0
+appVersion: "1.0.0"
+maintainers:
+  - name: Chaitanya Bharath Gopu
+    email: gchaitanyabharath9@gmail.com
