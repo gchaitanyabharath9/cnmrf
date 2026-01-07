@@ -54,3 +54,11 @@ distributed under the License is distributed on an "AS IS" BASIS,
 WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
+
+
+## Governance & Stewardship
+
+The Cloud-Native Modernization Reference Framework (CNMRF) is stewarded by an independently registered entity functioning solely as a non-profit-style publisher. Its operational mandate is strictly limited to the maintenance, integrity, and dissemination of the framework's core intellectual property.
+
+### Neutrality Commitment
+The stewardship entity maintains CNMRF as a vendor-neutral standard. It does not engage in commercial software consulting, resell cloud services, or endorse specific third-party vendors. This structural separation ensures that CNMRF's architectural patterns remain objective and free from commercial bias.
