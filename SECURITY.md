@@ -1,16 +1,20 @@
 # Security Policy
 
-## Responsible Disclosure
+## Supported Versions
 
-We take the security of this reference framework seriously. If you discover a vulnerability in the architectural patterns or template code:
+| Version | Supported          |
+| ------- | ------------------ |
+| 1.x     | :white_check_mark: |
+| < 1.0   | :x:                |
 
-1.  **Do NOT open a public GitHub issue.**
-2.  Email details to: `gchaitanyabharath9@gmail.com`
-3.  Include "SECURITY REPORT" in the subject line.
+## Reporting a Vulnerability
 
-## Scope
-*   **In Scope:** Vulnerabilities in the reference implementation patterns (e.g., insecure defaults in templates).
-*   **Out of Scope:** Vulnerabilities in 3rd party dependencies (please report to upstream maintainers).
+As this framework is a reference architecture, "vulnerabilities" typically relate to insecurity in the recommended patterns rather than binary exploits.
 
-## Response
-We will acknowledge receipt within 48 hours and provide a timeline for analysis.
+To report a security design flaw:
+1.  Do NOT open a public GitHub issue.
+2.  Email the maintainer at [gchaitanyabharath9@gmail.com] with the subject "CNMRF Security Design Flaw".
+3.  We will review the architectural pattern and release an errata or updated pattern within 14 days.
+
+## Zero Trust Philosophy
+CNMRF assumes a "Zero Trust" posture. If you identify a pattern that implicitly trusts a network segment or identity without verification, this is considered a critical design bug.
