@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "If you use this reference framework, please cite it as below."
+authors:
+  - family-names: "Gopu"
+    given-names: "Chaitanya Bharath"
+title: "Cloud-Native Modernization Reference Framework (CNMRF)"
+version: 1.1.1
+date-released: 2026-01-06
+url: "https://github.com/gchaitanyabharath9/cnmrf"
+license: Apache-2.0
+type: software
+abstract: "An open-source, platform-neutral architectural reference framework for enterprise cloud modernization."

@@ -61,16 +61,20 @@ The Cloud-Native Modernization Reference Framework (CNMRF) is an original open-s
 
 This work was created independently as a contribution to the field of cloud-native architecture. It is not a work-for-hire and is not affiliated with, sponsored by, or endorsed by any current or former employer.
 
-## Licensing & Copyright
+## 7. Citation
+If you use CNMRF in your work, please cite it as:
+> Gopu, C. B. (2026). Cloud-Native Modernization Reference Framework (CNMRF) [Computer software]. https://github.com/gchaitanyabharath9/cnmrf
 
+See [CITATION.cff](CITATION.cff) for more details.
+
+## 8. License
 Copyright 2026 Chaitanya Bharath Gopu.
 
-Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
 
-http://www.apache.org/licenses/LICENSE-2.0
+    http://www.apache.org/licenses/LICENSE-2.0
+
 
 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
-
-## Citation
-
-If you reference this framework in your work, please see [CITATION.md](CITATION.md) for attribution guidelines.
