@@ -4,22 +4,36 @@ This directory contains the comprehensive documentation for the Cloud-Native Mod
 
 ## Documentation Structure
 
-*   **[architecture/](architecture/README.md)** - Core architectural patterns, diagrams, and non-functional requirements.
-*   **[adr/](adr/README.md)** - Architecture Decision Records detailing the rationale behind design choices.
-*   **[security/](security/README.md)** - Security baselines, compliance standards, and access control patterns.
-*   **[resiliency/](resiliency/README.md)** - Patterns for system reliability, fault tolerance, and circuit breaking.
-*   **[platform/](platform/README.md)** - Guidance for platform engineering and internal developer platforms.
-*   **[cicd/](cicd/README.md)** - Reference patterns for continuous integration and deployment pipelines.
-*   **[governance/](governance/README.md)** - Project governance, scope definition, and contribution guidelines.
-*   **[publication/](publication/README.md)** - Records of public dissemination, copyright documentation, and publication history.
+### 1. Strategy & Governance
+*   **[publication/](publication/README.md)** - Executive Summary and Release Notes.
+*   **[governance/](governance/README.md)** - Review Board (ARB), TOGAF Mapping, API Standards, IP Ownership.
+*   **[due-diligence/](due-diligence/README.md)** - Assessment frameworks and risk auditing.
+*   **[cost/](cost/README.md)** - Billing models, TCO analysis, and usage projections.
+
+### 2. Architecture & Design
+*   **[architecture/](architecture/README.md)** - Core patterns, End-to-End views, NFRs.
+*   **[security/](security/README.md)** - API Protection, Network Firewalls, Zero Trust.
+*   **[migration/](migration/README.md)** - Rehosting/Refactoring strategies, Data Cutover.
+*   **[platform/](platform/README.md)** - Environments, FinOps, Portability.
+
+### 3. Implementation
+*   **[integration/](integration/README.md)** - API Gateways, Messaging, Event-Driven patterns.
+*   **[performance/](performance/README.md)** - Low-latency tuning, Capacity planning.
+*   **[resiliency/](resiliency/README.md)** - Fault tolerance patterns.
+*   **[cicd/](cicd/README.md)** - Pipelines, GitOps, Promotion models.
+
+### 4. Artifacts
+*   **[diagrams/](diagrams/README.md)** - Visual catalog (Visio/UML/ArchiMate).
+*   **[adr/](adr/README.md)** - Architecture Decision Records.
+*   **[togaf/](togaf/README.md)** - Repository metamodels.
 
 ## Suggested Reading Order
 
-1.  **Project Outline:** Review `governance/project-outline.md` to understand the framework's scope and purpose.
-2.  **Architecture:** Consult `architecture/README.md` to understand the fundamental patterns and components.
-3.  **Decision Records:** Read `adr/README.md` to understand the "why" behind key technical decisions.
-4.  **Domain Standards:** Review specific baselines in `security/` and `resiliency/` based on implementation needs.
-5.  **Implementation:** Refer to specific service templates in the root `templates/` directory after understanding the architectural context.
+1.  **Start Here:** `publication/executive-summary.md`
+2.  **Assess:** `due-diligence/assessment-framework.md`
+3.  **Plan:** `migration/strategy-guide.md`
+4.  **Architect:** `architecture/end-to-end-view.md`
+5.  **Govern:** `governance/standards-catalog.md`
 
 ---
 
