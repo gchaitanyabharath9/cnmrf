@@ -68,3 +68,8 @@ CNMRF formalizes the "6 Rs" of migration into an executable engineering strategy
 ## 6. Conclusion
 
 The Cloud-Native Modernization Reference Framework offers a rigorous, academic, and field-tested approach to enterprise software architecture. By prioritizing portability, security parity, and operational governance, it empowers organizations to reclaim control over their technical destiny, independent of specific cloud vendors. It stands not as a product, but as a codified body of knowledge contributed to the engineering community to advance the state of distributed systems design.
+
+---
+
+**Copyright © 2026 Chaitanya Bharath Gopu.**  
+*This document is protected by intellectual property laws. Usage is governed by the Apache License 2.0 where applicable. All distinct architectural compilations and text are reserved.*
