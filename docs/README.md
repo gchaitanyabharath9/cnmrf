@@ -13,6 +13,7 @@ This directory contains the comprehensive documentation for the Cloud-Native Mod
 
 ### 2. Architecture & Design
 *   **[architecture/](architecture/README.md)** - Core patterns, End-to-End views, NFRs.
+*   **[networking/](networking/dns.md)** - **New (v1.1):** DNS, Load Balancing, Routing standards.
 *   **[security/](security/README.md)** - API Protection, Network Firewalls, Zero Trust.
 *   **[migration/](migration/README.md)** - Rehosting/Refactoring strategies, Data Cutover.
 *   **[platform/](platform/README.md)** - Environments, FinOps, Portability.
