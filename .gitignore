@@ -6,9 +6,15 @@ docs/ieee/
 *petition*
 *exhibit*
 *uscis*
+*recommendation*
+*rfe*
+*attorney*
 scripts/generate_protected_artifacts.js
 scripts/build_ieee_summary_pdf.js
 
-# Node
+# Node / Build
 node_modules/
+dist/
 *.log
+*.tmp
+.DS_Store
