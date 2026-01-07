@@ -7,7 +7,9 @@ This directory contains the comprehensive documentation for the Cloud-Native Mod
 ### 1. Strategy & Governance
 *   **[publication/](publication/README.md)** - Executive Summary and Release Notes.
 *   **[releases/](releases/v1.0-freeze.md)** - **v1.0 Frozen Baseline Declaration.**
+*   **[releases/](releases/v1.1.1-freeze.md)** - **v1.1.1 Frozen Patch Declaration (IP/Governance).**
 *   **[governance/](governance/README.md)** - Review Board (ARB), TOGAF Mapping, API Standards, IP Ownership.
+    *   *[IP Ownership & Content Protection](governance/ip-ownership-and-content-protection.md)* - **New (v1.1.1)** Usage and attribution rules.
 *   **[due-diligence/](due-diligence/README.md)** - Assessment frameworks and risk auditing.
 *   **[cost/](cost/README.md)** - Billing models, TCO analysis, and usage projections.
 
