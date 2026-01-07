@@ -3,10 +3,27 @@ message: "If you use this reference framework, please cite it as below."
 authors:
   - family-names: "Gopu"
     given-names: "Chaitanya Bharath"
+    orcid: "https://orcid.org/0009-0007-8877-1755"
 title: "Cloud-Native Modernization Reference Framework (CNMRF)"
-version: 1.1.1
-date-released: 2026-01-06
+version: 1.2.0
+date-released: 2026-01-07
 url: "https://github.com/gchaitanyabharath9/cnmrf"
+repository-code: "https://github.com/gchaitanyabharath9/cnmrf"
+preferred-citation:
+  type: software
+  authors:
+    - family-names: "Gopu"
+      given-names: "Chaitanya Bharath"
+  title: "Cloud-Native Modernization Reference Framework (CNMRF)"
+  year: 2026
+  publisher: "GitHub"
+  url: "https://github.com/gchaitanyabharath9/cnmrf"
+abstract: "A platform-neutral, vendor-agnostic reference framework standardizing the modernization of large-scale enterprise systems through Zero Trust patterns and immutable infrastructure governance."
+keywords:
+  - cloud-native
+  - modernization
+  - reference-architecture
+  - zero-trust
+  - platform-engineering
+  - software-architecture
 license: Apache-2.0
-type: software
-abstract: "An open-source, platform-neutral architectural reference framework for enterprise cloud modernization."
