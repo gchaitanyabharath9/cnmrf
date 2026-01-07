@@ -8,20 +8,20 @@ This directory contains the comprehensive documentation for the Cloud-Native Mod
 *   **[publication/](publication/README.md)** - Executive Summary and Release Notes.
 *   **[releases/](releases/v1.0-freeze.md)** - **v1.0 Frozen Baseline Declaration.**
 *   **[releases/](releases/v1.1.1-freeze.md)** - **v1.1.1 Frozen Patch Declaration (IP/Governance).**
-*   **[governance/](governance/README.md)** - Review Board (ARB), TOGAF Mapping, API Standards, IP Ownership.
-    *   *[IP Ownership & Content Protection](governance/ip-ownership-and-content-protection.md)* - **New (v1.1.1)** Usage and attribution rules.
-*   **[due-diligence/](due-diligence/README.md)** - Assessment frameworks and risk auditing.
-*   **[cost/](cost/README.md)** - Billing models, TCO analysis, and usage projections.
+*   **[governance/](governance/README.md)** - Review Board (ARB), TOGAF Mapping, API Standards.
+    *   *[IP Ownership](governance/ip-ownership-and-content-protection.md)* - Usage and attribution rules.
 
 ### 2. Architecture & Design
 *   **[architecture/](architecture/README.md)** - Core patterns, End-to-End views, NFRs.
-*   **[networking/](networking/dns.md)** - **New (v1.1):** DNS, Load Balancing, Routing standards.
+*   **[diagrams/](diagrams/catalog.md)** - **Visual Catalog (Mermaid/Visio).**
+*   **[networking/](networking/dns.md)** - DNS, Load Balancing, and Routing standards.
 *   **[security/](security/README.md)** - API Protection, Network Firewalls, Zero Trust.
 *   **[migration/](migration/README.md)** - Rehosting/Refactoring strategies, Data Cutover.
-*   **[platform/](platform/README.md)** - Environments, FinOps, Portability.
 
-### 3. Implementation
-*   **[integration/](integration/README.md)** - API Gateways, Messaging, Event-Driven patterns.
+### 3. Usage & Operations
+*   **[platform/](platform/README.md)** - Environments, FinOps, Portability.
+*   **[cicd/](cicd/README.md)** - GitOps, Pipelines, Promotion logic.
+*   **[attorney-handoff/](attorney-handoff/eb1a-exhibit-cross-reference.md)** - **EB-1A Evidence Packaging.**n patterns.
 *   **[performance/](performance/README.md)** - Low-latency tuning, Capacity planning.
 *   **[resiliency/](resiliency/README.md)** - Fault tolerance patterns.
 *   **[cicd/](cicd/README.md)** - Pipelines, GitOps, Promotion models.

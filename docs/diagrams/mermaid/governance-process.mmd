@@ -1,0 +1,15 @@
+graph LR
+    title Governance Workflow (TOGAF-Aligned)
+    
+    Start(Idea/Requirement) --> ArchDesc[Creation: High Level Design]
+    ArchDesc --> Review{ARB Review?}
+    
+    Review -->|Approved| Build[Build Phase]
+    Review -->|Rejected| Rework[Refine Architecture]
+    Review -->|Waiver Req| RiskAssess[Risk Assessment]
+    
+    RiskAssess -->|Accepted Risk| Build
+    RiskAssess -->|Too High| Stop((Stop))
+    
+    Build --> Validation[Auto-Compliance Checks]
+    Validation --> Deploy[Production Deploy]

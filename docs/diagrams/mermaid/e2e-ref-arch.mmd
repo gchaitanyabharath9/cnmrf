@@ -1,0 +1,25 @@
+graph TD
+    title End-to-End Reference Architecture
+    
+    subgraph "External"
+    User[User/Device] -->|HTTPS| CDN[CDN/WAF]
+    Partner[B2B Partner] -->|mTLS| B2B_GW[B2B Gateway]
+    end
+    
+    subgraph "DMZ / Edge"
+    CDN -->|Ingress| APIGW[API Gateway (OIDC)]
+    B2B_GW -->|Queue| MQ[Msg Queue]
+    end
+    
+    subgraph "Trusted Zone (Private)"
+    APIGW -->|mTLS| MicroSvc[Microservices Pool]
+    MQ -->|Consume| Worker[Worker Svc]
+    
+    MicroSvc -->|SQL| DB[(Database)]
+    Worker -->|NoSQL| Cache[(Redis/Cache)]
+    end
+    
+    subgraph "Management"
+    Ops[SRE/DevOps] -->|GitOps| CD[ArgoCD]
+    CD -->|Sync| MicroSvc
+    end

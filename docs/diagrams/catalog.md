@@ -1,31 +1,23 @@
 # CNMRF Diagram Catalog
 
-## 1. Inventory
+## 1. Primary Architecture
+*   **[End-to-End Reference Arch](mermaid/e2e-ref-arch.mmd)** - High-level system interaction view.
+*   **[Multi-Environment Flow](mermaid/env-flow.mmd)** - Local → Prod promotion strategy.
 
-| ID | Diagram Name | Notation | View Type | Audience | CNMRF Link |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| **VIS-01** | Reference Architecture | Visio | Layered | Exec/Lead | `architecture/end-to-end-view.md` |
-| **VIS-02** | TOGAF ADM Lifecycle | Visio | Process | Architect | `governance/togaf-adm-mapping.md` |
-| **VIS-03** | Network Segments | Visio | Infrastructure | Security | `security/network/firewall-proxy-arch.md` |
-| **UML-01** | API Security Flow | UML Sequence | Security | Dev/Sec | `security/api-security.md` |
-| **UML-02** | B2B Onboarding | UML Sequence | Integration | Partner | `security/network/firewall-proxy-arch.md` |
-| **UML-03** | Data Migration | UML Activity | Data | DBA | `migration/strategy-guide.md` |
-| **AM-01** | Strategy & Motivation | ArchiMate | Business | Exec | `governance/standards-catalog.md` |
-| **MER-01** | GitOps Promotion | Mermaid | Pipeline | DevOps | `cicd/promotion-model.md` |
-| **MER-02** | Cost Governance | Mermaid | Loop | FinOps | `cost/billing-model/usage-projection.md` |
+## 2. Security Patterns
+*   **[Security Boundary (OIDC/mTLS)](mermaid/security-boundary.mmd)** - Zero trust enforcement points.
+*   **[Network Zoning](mermaid/network-zones.mmd)** - Internal vs DMZ vs Egress.
 
-## 2. Visio Build Specs
+## 3. Integration & Data
+*   **[Messaging Patterns](mermaid/messaging-flow.mmd)** - Kafka/MQ reliability flows.
+*   **[Batch Processing](mermaid/batch-arch.mmd)** - Autosys/Cronjob execution model.
 
-### VIS-01: End-to-End Reference Architecture
-*   **Page:** Widescreen (16:9)
-*   **Layers:** L1 (Business), L2 (App), L3 (Data), L4 (Cloud Infra).
-*   **Stencils:** "Cloud/Compute", "Database", "User", "Firewall".
-*   **Style:** Flat design, vendor-neutral colors (Blue/Grey).
+## 4. Governance & Migration
+*   **[Governance Workflow](mermaid/governance-process.mmd)** - TOGAF ADM + ARB interaction.
+*   **[Migration Cutover](mermaid/migration-strangler.mmd)** - Traffic shifting visuals.
 
-### VIS-03: Network Segments
-*   **Containers:** "Internet", "DMZ", "Trusted", "Data".
-*   **Connectors:** Red dashed (Untrusted), Green solid (mTLS).
+## 5. Operations
+*   **[Cost Governance Loop](mermaid/finops-loop.mmd)** - Usage monitoring to budget enforcement.
+*   **[Observability Stack](mermaid/observability-stack.mmd)** - Logs/Metrics/Traces pipeline.
 
----
-
-Copyright 2026 Chaitanya Bharath Gopu. Licensed under the Apache License, Version 2.0.
+All original diagrams are Copyright 2026 Chaitanya Bharath Gopu (Apache 2.0).
