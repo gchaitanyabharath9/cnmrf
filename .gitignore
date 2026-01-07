@@ -1,0 +1,14 @@
+# Petition Safeguards
+docs/publication/EB1A*
+docs/publication/Comparable*
+docs/publication/IEEE*
+docs/ieee/
+*petition*
+*exhibit*
+*uscis*
+scripts/generate_protected_artifacts.js
+scripts/build_ieee_summary_pdf.js
+
+# Node
+node_modules/
+*.log
